@@ -13,6 +13,7 @@ clusterGroup:
   - config-demo
   - hello-world
   - plumbing
+  - minio
 
   subscriptions:
 
@@ -54,6 +55,7 @@ clusterGroup:
     - config-demo
     - hello-world
     - plumbing
+    - minio
   # Explicitly mention the cluster-state based overrides we plan to use for this pattern.
   # We can use self-referential variables because the chart calls the tpl function with these variables defined
   sharedValueFiles:
@@ -107,6 +109,11 @@ clusterGroup:
       namespace: redhat-ods-operator
       project: hub
       path: charts/all/openshift-ai
+    minio:
+      name: minio
+      namespace: minio
+      project: hub
+      path: charts/all/minio
       
 
   imperative:
