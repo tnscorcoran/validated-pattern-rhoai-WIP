@@ -2,4 +2,4 @@
 global:
   hubClusterDomain: hub.example.com
   localCluster: local.example.com
-  dsc: false
+  tempp: false
