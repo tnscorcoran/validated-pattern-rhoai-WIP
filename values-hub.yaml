@@ -20,7 +20,8 @@ clusterGroup:
     rhoai:
       name: rhods-operator
       # Fast is required for 2.9.0
-      channel: stable-2.13.1
+      # channel: stable-2.13.1
+      channel: stable
       namespace: openshift-operators
 
     openshift-pipelines:
